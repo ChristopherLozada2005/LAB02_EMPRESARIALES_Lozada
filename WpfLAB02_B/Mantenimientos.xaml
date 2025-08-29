@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:WpfLAB02_B"
         mc:Ignorable="d"
         Title="Mantenimientos" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="200">
+        <Button x:Name="btnConductores" Content="Conductores" Height="40" Click="btnConductores_Click"/>
+        <Button x:Name="btnTransportistas" Content="Transportistas" Height="40" Click="btnTransportistas_Click"/>
+        <Button x:Name="btnCamiones" Content="Camiones" Height="40" Click="btnCamiones_Click"/>
+        <Button x:Name="btnProductos" Content="Productos" Height="40" Click="btnProductos_Click"/>
+    </StackPanel>
 </Window>

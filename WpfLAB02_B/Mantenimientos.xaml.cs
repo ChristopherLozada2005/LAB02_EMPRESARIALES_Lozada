@@ -23,5 +23,27 @@ namespace WpfLAB02_B
         {
             InitializeComponent();
         }
+
+        private void btnConductores_Click(object sender, RoutedEventArgs e)
+        {
+            RegistroConductores ventana = new RegistroConductores();
+            ventana.Show();
+            this.Close();
+        }
+
+        private void btnTransportistas_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnCamiones_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnProductos_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
