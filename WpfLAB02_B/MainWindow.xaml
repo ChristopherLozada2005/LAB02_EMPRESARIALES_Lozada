@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <StackPanel>
+            <Button Content="Ir a Home"
+                    Height="50"
+                    Background="Green">
+            </Button>
+            <Button Content="Ir a Personas"
+                    Height="50"
+                    Background="Yellow"
+                    Click="Button_Click">
+            </Button>
+        </StackPanel>
 
     </Grid>
 </Window>
