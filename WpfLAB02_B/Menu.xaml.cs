@@ -23,5 +23,25 @@ namespace WpfLAB02_B
         {
             InitializeComponent();
         }
+        private void btnOperaciones_Click(object sender, RoutedEventArgs e)
+        {
+            Operaciones ventana = new Operaciones();
+            ventana.Show();
+            this.Close();
+        }
+
+        private void btnMantenimientos_Click(object sender, RoutedEventArgs e)
+        {
+            Mantenimientos ventana = new Mantenimientos();
+            ventana.Show();
+            this.Close();
+        }
+
+        private void btnReportes_Click(object sender, RoutedEventArgs e)
+        {
+            Reportes ventana = new Reportes();
+            ventana.Show();
+            this.Close();
+        }
     }
 }

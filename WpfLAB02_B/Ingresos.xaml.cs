@@ -15,24 +15,21 @@ using System.Windows.Shapes;
 namespace WpfLAB02_B
 {
     /// <summary>
-    /// Lógica de interacción para Operaciones.xaml
+    /// Lógica de interacción para Ingresos.xaml
     /// </summary>
-    public partial class Operaciones : Window
+    public partial class Ingresos : Window
     {
-        public Operaciones()
+        public Ingresos()
         {
             InitializeComponent();
         }
-
-        private void btnOpIngresos_Click(object sender, RoutedEventArgs e)
+        private void BtnGuardar_Click(object sender, RoutedEventArgs e)
         {
-            Ingresos ingresos = new Ingresos();
-            ingresos.Show();
-        }
+            MessageBox.Show("Datos guardados correctamente");
 
-        private void btnOpSalida_Click(object sender, RoutedEventArgs e)
-        {
-
+            Operaciones ventanaOperaciones = new Operaciones();
+            ventanaOperaciones.Show();
+            this.Close();
         }
     }
 }

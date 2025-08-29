@@ -1,0 +1,75 @@
+﻿<Window x:Class="WpfLAB02_B.Ingresos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfLAB02_B"
+        mc:Ignorable="d"
+        Title="Ingresos" Height="450" Width="800">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Tipo Documento -->
+        <StackPanel Orientation="Horizontal" Margin="0,5">
+            <Label Content="Tipo Documento:" Width="150"/>
+            <TextBox x:Name="txtTipoDocumento" Width="250"/>
+        </StackPanel>
+
+        <!-- Numero Documento -->
+        <StackPanel Orientation="Horizontal" Margin="0,5" Grid.Row="1">
+            <Label Content="Número Documento:" Width="150"/>
+            <TextBox x:Name="txtNumeroDocumento" Width="250"/>
+        </StackPanel>
+
+        <!-- Placa -->
+        <StackPanel Orientation="Horizontal" Margin="0,5" Grid.Row="2">
+            <Label Content="Placa:" Width="150"/>
+            <TextBox x:Name="txtPlaca" Width="250"/>
+        </StackPanel>
+
+        <!-- Turno -->
+        <StackPanel Orientation="Horizontal" Margin="0,5" Grid.Row="3">
+            <Label Content="Turno:" Width="150"/>
+            <TextBox x:Name="txtTurno" Width="250"/>
+        </StackPanel>
+
+        <!-- Nombre Conductor -->
+        <StackPanel Orientation="Horizontal" Margin="0,5" Grid.Row="4">
+            <Label Content="Nombre Conductor:" Width="150"/>
+            <TextBox x:Name="txtNombreConductor" Width="250"/>
+        </StackPanel>
+
+        <!-- Nombre Cliente -->
+        <StackPanel Orientation="Horizontal" Margin="0,5" Grid.Row="5">
+            <Label Content="Nombre Cliente:" Width="150"/>
+            <TextBox x:Name="txtNombreCliente" Width="250"/>
+        </StackPanel>
+
+        <!-- Fecha y Hora -->
+        <StackPanel Orientation="Horizontal" Margin="0,5" Grid.Row="6">
+            <Label Content="Fecha y Hora:" Width="150"/>
+            <TextBox x:Name="txtFechaHora" Width="250"/>
+        </StackPanel>
+
+        <!-- Peso de Ingreso -->
+        <StackPanel Orientation="Horizontal" Margin="0,5" Grid.Row="7">
+            <Label Content="Peso de Ingreso:" Width="150"/>
+            <TextBox x:Name="txtPesoIngreso" Width="250"/>
+        </StackPanel>
+
+        <!-- Botón Guardar -->
+        <Button Grid.Row="8" Content="Guardar" Height="40" Width="120" 
+                HorizontalAlignment="Center" Margin="0,15,0,0"
+                Click="BtnGuardar_Click"/>
+    </Grid>
+</Window>

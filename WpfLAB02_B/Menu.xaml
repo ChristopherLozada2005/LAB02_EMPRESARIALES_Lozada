@@ -7,9 +7,10 @@
         mc:Ignorable="d"
         Title="Menu" Height="450" Width="800">
     <Grid>
-        <TextBlock Text="Bienvenido al Menú Principal"
-                   VerticalAlignment="Center" 
-                   HorizontalAlignment="Center"
-                   FontSize="20" FontWeight="Bold"/>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="200">
+            <Button x:Name="btnOperaciones" Content="Operaciones" Height="40" Click="btnOperaciones_Click"/>
+            <Button x:Name="btnMantenimientos" Content="Mantenimientos" Height="40" Click="btnMantenimientos_Click"/>
+            <Button x:Name="btnReportes" Content="Reportes" Height="40" Click="btnReportes_Click"/>
+        </StackPanel>
     </Grid>
 </Window>

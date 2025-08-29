@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="Operaciones" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="200">
+            <Button x:Name="btnOpIngresos" Content="Ingresos" Height="40" Click="btnOpIngresos_Click"/>
+            <Button x:Name="btnOpSalida" Content="Salidas" Height="40" Click="btnOpSalida_Click"/>
+        </StackPanel>
     </Grid>
 </Window>
