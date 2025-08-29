@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="Reportes" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="200">
+            <Button x:Name="btnCargas" Content="Cargas" Height="40" Click="btnCargas_Click"/>
+            <Button x:Name="btnIngresos" Content="Ingresos" Height="40" Click="btnIngresos_Click"/>
+            <Button x:Name="btnSalidas" Content="Salidas" Height="40" Click="btnSalidas_Click"/>
+        </StackPanel>
+
     </Grid>
 </Window>

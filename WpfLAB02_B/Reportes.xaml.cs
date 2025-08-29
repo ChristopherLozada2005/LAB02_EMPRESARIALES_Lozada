@@ -23,5 +23,22 @@ namespace WpfLAB02_B
         {
             InitializeComponent();
         }
+
+        private void btnSalidas_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnIngresos_Click(object sender, RoutedEventArgs e)
+        {
+            ReporteIngresos ventana = new ReporteIngresos();
+            ventana.Show();
+            this.Close();
+        }
+
+        private void btnCargas_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
